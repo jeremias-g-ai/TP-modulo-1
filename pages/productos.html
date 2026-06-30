@@ -24,13 +24,36 @@
         </div>
       </nav>
     </header>
-
+    <section class="container my-4">
+    <div class="card">
+        <img id="imagenPrincipal"
+            src="../assets/coleccion-senor-anillos-tolkien-01.avif"
+            class="card-img-top">
+        <div class="card-body">
+            <h2 id="tituloPrincipal">
+                The Lord of the Rings
+            </h2>
+            <h4 id="autorPrincipal">
+                J.R.R. Tolkien
+            </h4>
+            <h5 id="precioPrincipal">
+                $120.000
+            </h5>
+            <p id="descripcionPrincipal">
+                Seleccioná un libro para ver su información.
+            </p>
+            <button class="Compramebtn">
+                Comprar
+            </button>
+        </div>
+    </div>
+</section>
  <main class="container my-4">
   <div class="row">
     <!-- Libro 1 -->
     <div class="col-md-4 mb-4">
       <div class="card h-100">
-        <img src="../assets/coleccion-senor-anillos-tolkien-01.avif" class="card-img-top" alt="Libro 1">
+        <img id="libro1" src="../assets/coleccion-senor-anillos-tolkien-01.avif" class="card-img-top" alt="Libro 1">
         <div class="card-body" style="background-color: #b7ad91;">
           <h5 class="card-title">The Lord of the Rings</h5>
           <h6 class="card-subtitle mb-2 text-muted">J.R.R. Tolkien</h6>
@@ -43,7 +66,7 @@
     <!-- Libro 2 -->
     <div class="col-md-4 mb-4">
       <div class="card h-100">
-        <img src="../assets/el ultimo reyno.jpg" class="card-img-top"alt="Libro 2">
+        <img id="libro2" src="../assets/el ultimo reyno.jpg" class="card-img-top"alt="Libro 2">
         <div class="card-body" style="background-color: #b7ad91;">
           <h5 class="card-title">El Último Reino</h5>
           <h6 class="card-subtitle mb-2 text-muted">Bernard Cornwell</h6>
@@ -54,7 +77,7 @@
     </div>
 
     <!-- Libro 3 -->
-    <div class="col-md-4 mb-4">
+    <div id="libro3" class="col-md-4 mb-4">
       <div class="card h-100">
         <img src="../assets/la torre obscura.webp" class="card-img-top" alt="Libro 3">
         <div class="card-body" style="background-color: #b7ad91;">
@@ -70,7 +93,7 @@
 <main class="container my-4">
     <div class="row">
     <!-- Libro 4 -->
-    <div class="col-md-4 mb-4">
+    <div id="libro4" class="col-md-4 mb-4">
       <div class="card h-100">
         <img src="../assets/Harry potter.webp" class="card-img-top" alt="Libro 4">
         <div class="card-body" style="background-color: #b7ad91;">
@@ -83,7 +106,7 @@
     </div>
 
     <!-- Libro 5 -->
-    <div class="col-md-4 mb-4">
+    <div id="libro5" class="col-md-4 mb-4">
       <div class="card h-100">
         <img src="../assets/sherlock holmes.jpg" class="card-img-top" alt="Libro 5">
         <div class="card-body" style="background-color: #b7ad91;">
@@ -144,5 +167,13 @@
         <p class="text-center mb-0">&copy; 2025 Book Haven. Todos los derechos reservados.</p>
     </div>
     </footer>
+
+    <div id="modal" class="modal-overlay">
+    <span id="cerrarModal" class="cerrar-modal">✖</span>
+    <img id="modalImg" class="modal-img" src="" alt="Imagen ampliada">
+    </div>
+
+    <script src="../javascript/productos.js"></script>
+  
 
 </body>
