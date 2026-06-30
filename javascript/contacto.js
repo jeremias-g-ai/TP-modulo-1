@@ -37,9 +37,9 @@ function renderizarReservas() {
 
         li.classList.add("list-group-item");
 
-        if (reserva.completada) {
-            li.classList.add("text-decoration-line-through");
-        }
+      if (reserva.completada) {
+    li.classList.add("completada");
+}
 
         li.innerHTML = `
             ${reserva.texto}
@@ -72,7 +72,7 @@ function eliminarReserva(index) {
 
 function completarReserva(index) {
 
-    reservas[index].completada = true;
+    reservas[index].completada = !reservas[index].completada;
 
     renderizarReservas();
 
